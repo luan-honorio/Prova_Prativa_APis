@@ -1,0 +1,39 @@
+
+<div class="bx-cad">
+    <h2>Atualizar Livro</h2>
+</div>
+
+<div class="cont-ques">
+    <form action="/atualizar/{{livros.id}}" method="post">
+
+        <div>
+            <label for="">Titulo do Livro:</label>
+            <input class="input-txt" type="text" name="titulo" value={{livros.titulo}}>
+        </div>
+        <div>
+            <label for="">Categoria do Livro:</label>
+            <input class="input-txt" type="text" name="categoria" value="{{livros.categoria}}">
+        </div>
+        <div>
+            <label for="">Descrição do Livro: </label>
+            <input class="input-txt" type="text" name="descricao" placeholder="Descrição:" value="{{livros.descricao}}">
+        </div>
+        <div class="dois">
+            <div>
+                <label for="">Preço do Livro</label>
+            <input class="input-vq"  type="text" name="valor" placeholder="valor" value="R${{livros.valor}}">
+           
+            </div>
+            <div>
+        <label for="">Quantidade disponível:</label>
+        <input class="input-vq" type="text" name="quantidade" placeholder="quantidade" value="{{livros.quantidade}}">
+        
+            </div>
+        
+        </div>
+        <div>
+            <input class="input-c" type="submit" value="Atualizar">
+        </div>
+
+    </form>
+</div>

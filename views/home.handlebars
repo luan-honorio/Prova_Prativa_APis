@@ -1,0 +1,34 @@
+
+<div class="box-pai">
+    {{#each result}}
+<div class="box-cards">
+
+<div class="box-titulo-description">
+<h4 class="titulos">{{this.titulo}}</h4>
+<p>{{this.descricao}}</p>
+</div>
+
+
+<div class="box-category" >
+ <p>{{this.categoria}}</p>
+    <p>{{this.valor}}</p>
+</div>
+
+<div class="box-buttons">
+
+<a class="atualiz" href="/Detalhes/{{this.id}}">ver detalhes</a>
+<p></p>
+<p></p>
+<a class="edit" href="/atualizar/{{id}}">Editar</a>
+<p></p>
+<a  class="exc" href="/excluir/{{id}}">Excluir</a>
+
+</div>
+</div>
+{{/each}}
+
+</div>
+
+
+
+</div>
